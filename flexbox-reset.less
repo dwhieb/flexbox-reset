@@ -1,0 +1,113 @@
+// CSS reset
+
+// general elements
+html, body, div, span, applet, object, iframe,
+// headers
+h1, h2, h3, h4, h5, h6,
+// text elements
+p, blockquote, pre,
+// inline elements
+a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+// styling elements
+b, u, i,
+// lists
+dl, dt, dd, ol, ul, li,
+// forms & tables
+button, caption, input, fieldset, form, label, legend, table, textarea, tbody, tfoot, thead, tr, th, td,
+// semantic elements
+article, aside, audio, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, mark, menu, nav, option, output, ruby, section, select, summary, time, video {
+  border: none;
+  border-collapse: collapse;
+  display: flex;
+  flex-direction: column;
+  font: inherit;
+  line-height: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+a, abbr, acronym, b, bdo, br, big, cite, code, del, dfn, em, h1, h2, h3, h4, h5, h6, i, img, input, ins, kbd, map, mark, object, p, q, samp, select, s, small, span, strike, strong, sub, sup, textarea, tt, var {
+  display: inline;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  background: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+  font-family: 'Fira Sans';
+  font-size: 100%;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+blockquote, q {
+  quotes: none;
+
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+input {
+  &[type=date],
+  &[type=datetime-local],
+  &[type=month],
+  &[type=time],
+  &[type=week] {
+    flex-direction: row;
+  }
+
+  &[type=radio] {
+    min-height: 15px;
+    min-width: 15px;
+  }
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  display: table;
+}
+
+tbody {
+  display: table-row-group;
+}
+
+td, th {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+th {
+  text-align: center;
+}
+
+thead {
+  display: table-header-group;
+}
+
+tr {
+  display: table-row;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "flexbox-reset",
+  "version": "1.0.0",
+  "description": "A CSS reset that uses the flexbox model by default.",
+  "keywords": [
+    "css",
+    "reset",
+    "flexbox"
+  ],
+  "homepage": "https://github.com/dwhieb/flexbox-reset#readme",
+  "bugs": "https://github.com/dwhieb/flexbox-reset/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Daniel W. Hieber",
+    "url": "http://danielhieber.com"
+  },
+  "repository": "https://github.com/dwhieb/flexbox-reset.git",
+  "scripts": {
+    "build": "lessc flexbox-reset.less flexbox-reset.css"
+  },
+  "dependencies": {
+    "less": "^2.7.1"
+  }
+}
