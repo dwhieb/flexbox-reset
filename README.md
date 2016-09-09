@@ -14,7 +14,7 @@ Or simply [download from GitHub](https://raw.githubusercontent.com/dwhieb/flexbo
 HTML:
 
 ```html
-<link rel=stylesheet href=node_modules/flexbox-reset/flexbox-reset.css>
+<link rel=stylesheet href=node_modules/flexbox-reset/flexbox-reset.css type=text/css>
 ```
 
 CSS:
