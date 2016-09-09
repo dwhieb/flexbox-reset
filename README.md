@@ -1,5 +1,31 @@
 # flexbox-reset
-A CSS reset that defaults to the CSS3 flexbox model for elements whenever possible. Exceptions are made for various inline elements, form elements, etc.
+A CSS reset that defaults to the CSS3 flexbox model for elements whenever possible. Exceptions are made for various inline elements, form elements, etc. Based in part on the Meyer reset.
+
+## Install
+
+Install using npm:
+```
+npm install --save flexbox-reset
+```
+
+Or simply [download from GitHub](https://raw.githubusercontent.com/dwhieb/flexbox-reset/master/flexbox-reset.less).
+
+## Usage
+HTML:
+
+```html
+<link rel=stylesheet href=node_modules/flexbox-reset/flexbox-reset.css>
+```
+
+CSS:
+```css
+@import 'node_modules/flexbox-reset/flexbox-reset.css';
+```
+
+LESS:
+```less
+@import 'node_modules/flexbox-reset/flexbox-reset.less';
+```
 
 ## Philosophy
 When the web began, webpages were primarily modeled on traditional print paper documents, and so CSS styles were designed to imitate the classic paper book/document, and were largely text-focused. Webpages were designed to be read from top to bottom like a paper page, with headers, sidebars, and fixed page widths.
