@@ -1,6 +1,16 @@
 # flexbox-reset
 A CSS reset that defaults to the CSS3 flexbox model for elements whenever possible. Exceptions are made for various inline elements, form elements, etc. Based in part on the Meyer reset.
 
+[![npm](https://img.shields.io/npm/v/npm.svg?maxAge=2592000)]()
+[![npm](https://img.shields.io/npm/dm/flexbox-reset.svg?maxAge=2592000)]()
+[![GitHub issues](https://img.shields.io/github/issues/dwhieb/flexbox-reset.svg?maxAge=2592000)]()
+[![license](https://img.shields.io/github/license/dwhieb/flexbox-reset.svg?maxAge=2592000)]()
+
+[![GitHub forks](https://img.shields.io/github/forks/dwhieb/flexbox-reset.svg?style=social&label=Fork&maxAge=2592000)]()
+[![GitHub stars](https://img.shields.io/github/stars/dwhieb/flexbox-reset.svg?style=social&label=Star&maxAge=2592000)]()
+[![GitHub watchers](https://img.shields.io/github/watchers/dwhieb/flexbox-reset.svg?style=social&label=Watch&maxAge=2592000)]()
+[![GitHub followers](https://img.shields.io/github/followers/dwhieb.svg?style=social&label=Follow&maxAge=2592000)]()
+
 ## Install
 
 Install using npm:
