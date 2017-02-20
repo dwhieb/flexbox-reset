@@ -17,11 +17,14 @@ pre,
 a,
 abbr,
 address,
+big,
+br,
 cite,
 code,
 del,
 dfn,
 em,
+hr,
 img,
 ins,
 kbd,
@@ -99,8 +102,8 @@ abbr,
 acronym,
 b,
 bdo,
-br,
 big,
+br,
 cite,
 code,
 del,
@@ -112,6 +115,7 @@ h3,
 h4,
 h5,
 h6,
+hr,
 i,
 img,
 input,
@@ -147,15 +151,12 @@ a:active {
 }
 body {
   background-color: white;
-  font-family: 'Fira Sans';
-  font-size: 100%;
   font-stretch: normal;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1;
   min-height: 100vh;
-  min-width: 100vw;
 }
 blockquote,
 q {
@@ -167,23 +168,6 @@ blockquote:after,
 q:after {
   content: '';
   content: none;
-}
-img,
-embed,
-object,
-video {
-  max-width: 100%;
-}
-input[type=date],
-input[type=datetime-local],
-input[type=month],
-input[type=time],
-input[type=week] {
-  flex-direction: row;
-}
-input[type=radio] {
-  min-height: 15px;
-  min-width: 15px;
 }
 ol,
 ul {
@@ -198,10 +182,6 @@ tbody {
 td,
 th {
   display: table-cell;
-  vertical-align: middle;
-}
-th {
-  text-align: center;
 }
 thead {
   display: table-header-group;
