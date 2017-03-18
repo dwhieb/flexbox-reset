@@ -14,22 +14,26 @@ dl, dt, dd, ol, ul, li,
 button, caption, input, fieldset, form, label, legend, table, textarea, tbody, tfoot, thead, tr, th, td,
 // semantic elements
 article, aside, audio, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, mark, menu, nav, option, output, ruby, section, select, summary, time, video {
-  border:          none;
+  border:          0;
   border-collapse: collapse;
   display:         flex;
   flex-direction:  column;
   font:            inherit;
-  line-height:     inherit;
   margin:          0;
-  outline:         none;
+  outline:         0;
   padding:         0;
   text-decoration: none;
   vertical-align:  baseline;
 }
 
 // set inline elements to display: inline
-a, abbr, acronym, b, bdo, big, br, cite, code, del, dfn, em, h1, h2, h3, h4, h5, h6, hr, i, img, input, ins, kbd, map, mark, object, p, q, samp, select, s, small, span, strike, strong, sub, sup, textarea, tt, var {
+a, abbr, acronym, b, bdo, big, br, cite, code, del, dfn, em, i, ins, kbd, mark, q, samp, s, small, span, strike, strong, sub, sup, time, tt, var {
   display: inline;
+}
+
+// set elements whose contents are typically inline to display: block
+blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, legend, option, output, p, pre, select, summary, textarea {
+  display: block;
 }
 
 // remove link styling
@@ -41,12 +45,12 @@ a, a:link, a:visited, a:hover, a:active {
 
 // set defaults for body
 body {
-  background-color: white;
+  background: white;
+  color: black;
   font-stretch: normal;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  line-height: 1;
   min-height: 100vh;
 }
 
@@ -59,6 +63,22 @@ blockquote, q {
   }
 }
 
+:focus {
+  outline: 0;
+}
+
+// corrects display issues for certain inputs on Edge and Chrome
+input[type=date],
+input[type=datetime-local],
+input[type=file],
+input[type=month],
+input[type=time],
+input[type=week],
+select,
+{
+  flex-direction: row;
+}
+
 // remove styling from lists
 ol, ul {
   list-style: none;
@@ -66,6 +86,7 @@ ol, ul {
 
 // set default table styling
 table {
+  border-spacing: 0;
   display: table;
 }
 
