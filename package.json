@@ -1,6 +1,6 @@
 {
   "name": "flexbox-reset",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "A CSS reset that uses the flexbox model by default.",
   "keywords": [
     "css",
@@ -18,7 +18,8 @@
   "scripts": {
     "build": "lessc flexbox-reset.less flexbox-reset.css"
   },
-  "dependencies": {
-    "less": "^2.7.1"
+  "dependencies": {},
+  "devDependencies": {
+    "less": "^2.7.2"
   }
 }
