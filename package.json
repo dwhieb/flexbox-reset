@@ -20,5 +20,7 @@
     "upload": "node build/upload.js"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "azure-storage": "^2.1.0"
+  }
 }
