@@ -16,10 +16,9 @@
   },
   "repository": "https://github.com/dwhieb/flexbox-reset.git",
   "scripts": {
-    "build": "lessc flexbox-reset.less flexbox-reset.css"
+    "build": "lessc flexbox-reset.less flexbox-reset.css",
+    "upload": "node build/upload.js"
   },
   "dependencies": {},
-  "devDependencies": {
-    "less": "^2.7.2"
-  }
+  "devDependencies": {}
 }

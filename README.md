@@ -2,7 +2,7 @@
 A CSS reset that defaults to the CSS3 flexbox model for elements whenever possible. Exceptions are made for various inline elements, form elements, etc. Based in part on the Meyer reset.
 
 [![npm](https://img.shields.io/npm/v/npm.svg?maxAge=2592000)](https://www.npmjs.com/package/flexbox-reset)
-[![npm](https://img.shields.io/npm/dm/flexbox-reset.svg?maxAge=2592000)](https://www.npmjs.com/package/flexbox-reset)
+[![npm](https://img.shields.io/npm/dt/flexbox-reset.svg?maxAge=2592000)](https://www.npmjs.com/package/flexbox-reset)
 [![GitHub issues](https://img.shields.io/github/issues/dwhieb/flexbox-reset.svg?maxAge=2592000)](https://github.com/dwhieb/flexbox-reset/issues)
 [![license](https://img.shields.io/github/license/dwhieb/flexbox-reset.svg?maxAge=2592000)](https://github.com/dwhieb/flexbox-reset)
 
