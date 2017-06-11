@@ -165,6 +165,7 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
+  line-height: 1;
   min-height: 100vh;
 }
 blockquote,

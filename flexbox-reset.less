@@ -51,6 +51,7 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
+  line-height: 1;
   min-height: 100vh;
 }
 
@@ -63,11 +64,12 @@ blockquote, q {
   }
 }
 
+// remove outline on focus
 :focus {
   outline: 0;
 }
 
-// corrects display issues for certain inputs on Edge and Chrome
+// corrects flexbox display issues for certain inputs on Edge and Chrome
 input[type=date],
 input[type=datetime-local],
 input[type=file],
