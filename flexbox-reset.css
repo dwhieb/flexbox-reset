@@ -54,6 +54,7 @@ fieldset,
 form,
 label,
 legend,
+output,
 table,
 textarea,
 tbody,
@@ -145,9 +146,11 @@ output,
 p,
 pre,
 select,
-summary,
 textarea {
   display: block;
+}
+[hidden] {
+  display: none;
 }
 a,
 a:link,
@@ -159,7 +162,7 @@ a:active {
   text-decoration: none;
 }
 body {
-  background: white;
+  background-color: transparent;
   color: black;
   font-stretch: normal;
   font-style: normal;
@@ -178,9 +181,6 @@ blockquote:after,
 q:after {
   content: '';
   content: none;
-}
-:focus {
-  outline: 0;
 }
 input[type=date],
 input[type=datetime-local],
