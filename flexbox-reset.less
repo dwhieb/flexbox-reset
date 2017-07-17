@@ -11,7 +11,7 @@ b, u, i,
 // lists
 dl, dt, dd, ol, ul, li,
 // forms and tables
-button, caption, input, fieldset, form, label, legend, table, textarea, tbody, tfoot, thead, tr, th, td,
+button, caption, input, fieldset, form, label, legend, output, table, textarea, tbody, tfoot, thead, tr, th, td,
 // semantic elements
 article, aside, audio, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, mark, menu, nav, option, output, ruby, section, select, summary, time, video {
   border:          0;
@@ -32,7 +32,7 @@ a, abbr, acronym, b, bdo, big, br, cite, code, del, dfn, em, i, ins, kbd, mark, 
 }
 
 // set elements whose contents are typically inline to display: block
-blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, legend, option, output, p, pre, select, summary, textarea {
+blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, legend, option, output, p, pre, select, textarea {
   display: block;
 }
 
@@ -106,4 +106,8 @@ thead {
 
 tr {
   display: table-row;
+}
+
+[hidden] {
+  display: none;
 }
