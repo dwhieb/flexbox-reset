@@ -21,6 +21,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "azure-storage": "^2.1.0"
+    "azure-storage": "^2.2.1"
   }
 }
