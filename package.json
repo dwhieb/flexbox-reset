@@ -19,5 +19,7 @@
     "build": "lessc flexbox-reset.less flexbox-reset.css"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "less": "^3.8.1"
+  }
 }
