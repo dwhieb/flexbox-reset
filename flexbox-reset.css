@@ -1,3 +1,5 @@
+/* reset.less */
+/* The CSS reset, from the flexbox-reset package: https://www.npmjs.com/package/flexbox-reset */
 html,
 body,
 div,
@@ -92,7 +94,6 @@ video {
   flex-direction: column;
   font: inherit;
   margin: 0;
-  outline: 0;
   padding: 0;
   text-decoration: none;
   vertical-align: baseline;
@@ -157,7 +158,8 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  background: transparent;
+  background-color: transparent;
+  background-image: none;
   color: inherit;
   text-decoration: none;
 }
@@ -175,10 +177,10 @@ blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-q:before,
-blockquote:after,
-q:after {
+blockquote::before,
+q::before,
+blockquote::after,
+q::after {
   content: '';
   content: none;
 }
