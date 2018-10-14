@@ -16,11 +16,8 @@
   },
   "repository": "https://github.com/dwhieb/flexbox-reset.git",
   "scripts": {
-    "build": "lessc flexbox-reset.less flexbox-reset.css",
-    "upload": "node build/upload.js"
+    "build": "lessc flexbox-reset.less flexbox-reset.css"
   },
   "dependencies": {},
-  "devDependencies": {
-    "azure-storage": "^2.2.1"
-  }
+  "devDependencies": {}
 }
