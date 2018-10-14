@@ -1,6 +1,6 @@
 {
   "name": "flexbox-reset",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "A CSS reset that uses the flexbox model by default.",
   "keywords": [
     "css",
@@ -16,11 +16,10 @@
   },
   "repository": "https://github.com/dwhieb/flexbox-reset.git",
   "scripts": {
-    "build": "lessc flexbox-reset.less flexbox-reset.css",
-    "upload": "node build/upload.js"
+    "build": "lessc flexbox-reset.less flexbox-reset.css"
   },
   "dependencies": {},
   "devDependencies": {
-    "azure-storage": "^2.2.1"
+    "less": "^3.8.1"
   }
 }
