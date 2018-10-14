@@ -1,6 +1,6 @@
 {
   "name": "flexbox-reset",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "A CSS reset that uses the flexbox model by default.",
   "keywords": [
     "css",
