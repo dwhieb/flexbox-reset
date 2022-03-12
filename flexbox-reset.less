@@ -72,6 +72,10 @@ blockquote, q {
   }
 }
 
+caption {
+  display: table-caption;
+}
+
 // corrects flexbox display issues for certain inputs on Edge and Chrome
 input[type=date],
 input[type=datetime-local],
@@ -79,8 +83,7 @@ input[type=file],
 input[type=month],
 input[type=time],
 input[type=week],
-select,
-{
+select {
   flex-direction: row;
 }
 
