@@ -18,15 +18,21 @@ dl, dt, dd, ol, ul, li,
 button, caption, input, fieldset, form, label, legend, output, table, textarea, tbody, tfoot, thead, tr, th, td,
 // semantic elements
 article, aside, audio, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, mark, menu, nav, option, output, ruby, section, select, summary, time, video {
-  border:          0;
+  border         : 0;
   border-collapse: collapse;
-  display:         flex;
-  flex-direction:  column;
-  font:            inherit;
-  margin:          0;
-  padding:         0;
+  display        : flex;
+  flex-direction : column;
+  font           : inherit;
+  margin         : 0;
+  padding        : 0;
   text-decoration: none;
-  vertical-align:  baseline;
+  vertical-align : baseline;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 // set inline elements to display: inline
@@ -47,20 +53,20 @@ blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, 
 a, a:visited, a:hover, a:active {
   background-color: transparent;
   background-image: none;
-  color:            inherit;
-  text-decoration:  none;
+  color           : inherit;
+  text-decoration : none;
 }
 
 // set defaults for body
 body {
-  color:        black;
-  font-size:    100%;
+  color       : black;
+  font-size   : 100%;
   font-stretch: normal;
-  font-style:   normal;
+  font-style  : normal;
   font-variant: normal;
-  font-weight:  normal;
-  line-height:  1;
-  min-height:   100vh;
+  font-weight : normal;
+  line-height : 1;
+  min-height  : 100vh;
 }
 
 // remove styling from quotes
@@ -76,6 +82,10 @@ caption {
   display: table-caption;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 // corrects flexbox display issues for certain inputs on Edge and Chrome
 input[type=date],
 input[type=datetime-local],
@@ -87,15 +97,20 @@ select {
   flex-direction: row;
 }
 
+picture {
+  display: block;
+}
+
 // remove styling from lists
-ol, ul {
+ol[role='list'],
+ul[role='list'] {
   list-style: none;
 }
 
 // set default table styling
 table {
   border-spacing: 0;
-  display:        table;
+  display       : table;
 }
 
 tbody {
@@ -112,4 +127,22 @@ thead {
 
 tr {
   display: table-row;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration       : 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior          : auto !important;
+    transition-duration      : 0.01ms !important;
+  }
+
 }
