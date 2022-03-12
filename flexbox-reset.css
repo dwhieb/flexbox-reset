@@ -98,6 +98,11 @@ video {
   text-decoration: none;
   vertical-align: baseline;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 a,
 abbr,
 acronym,
@@ -154,7 +159,6 @@ textarea {
   display: none;
 }
 a,
-a:link,
 a:visited,
 a:hover,
 a:active {
@@ -184,6 +188,12 @@ q::after {
   content: '';
   content: none;
 }
+caption {
+  display: table-caption;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
 input[type=date],
 input[type=datetime-local],
 input[type=file],
@@ -193,11 +203,15 @@ input[type=week],
 select {
   flex-direction: row;
 }
-ol,
-ul {
+picture {
+  display: block;
+}
+ol[role='list'],
+ul[role='list'] {
   list-style: none;
 }
 table {
+  border-collapse: collapse;
   border-spacing: 0;
   display: table;
 }
@@ -213,4 +227,18 @@ thead {
 }
 tr {
   display: table-row;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
