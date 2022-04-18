@@ -1,6 +1,6 @@
 # flexbox-reset
 
-A CSS reset that defaults to the flexbox model for elements whenever appropriate. Exceptions are made for various inline elements, form elements, etc. Based in part on the Meyer reset.
+A CSS reset that defaults to the flexbox model for elements whenever appropriate. Exceptions are made for various elements as appropriate.
 
 [![npm](https://img.shields.io/npm/v/npm.svg?maxAge=2592000)][npm]
 [![npm](https://img.shields.io/npm/dt/flexbox-reset.svg?maxAge=2592000)][npm]
