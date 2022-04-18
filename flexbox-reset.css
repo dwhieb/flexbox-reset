@@ -1,5 +1,8 @@
 /* reset.less */
 /* The CSS reset, from the flexbox-reset package: https://www.npmjs.com/package/flexbox-reset */
+html {
+  text-size-adjust: none;
+}
 html,
 body,
 div,
