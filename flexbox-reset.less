@@ -1,7 +1,5 @@
-/* The CSS reset, from the flexbox-reset package: https://www.npmjs.com/package/flexbox-reset */
-
-*:where(:not(iframe, canvas, img, svg, svg *, symbol *, video)) {
-  all    : unset;
+*:where(:not(iframe, canvas, details, img, summary, svg, svg *, symbol *, video)) {
+  all: unset;
   display: revert;
 }
 
@@ -15,18 +13,22 @@
   display: none;
 }
 
-:where(address, article, aside, audio, body, br, canvas, details, dialog, div, dl, embed, fieldset, figure, footer, form, header, hgroup, hr, html, iframe, img, input, li, main, menu, nav, object, ol, picture, section, ul, video) {
+:where(address, article, aside, audio, body, br, canvas, dialog, div, dl, embed, fieldset, figure, footer, form, header, hgroup, hr, html, iframe, img, input, li, main, menu, nav, object, ol, picture, section, ul, video) {
   display: flex;
 }
 
-a, button {
+a,
+button {
   cursor: revert;
 }
 
 // remove styling from quotes
-blockquote, q {
+blockquote,
+q {
   quotes: none;
-  &::before, &::after {
+
+  &::before,
+  &::after {
     content: '';
     content: none;
   }
@@ -40,9 +42,7 @@ meter {
   appearance: revert;
 }
 
-ol,
-ul,
-menu {
+:where(ol, ul, menu) {
   list-style: none;
 }
 

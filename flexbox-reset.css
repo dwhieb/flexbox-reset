@@ -1,5 +1,4 @@
-/* The CSS reset, from the flexbox-reset package: https://www.npmjs.com/package/flexbox-reset */
-*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+*:where(:not(iframe, canvas, details, img, summary, svg, svg *, symbol *, video)) {
   all: unset;
   display: revert;
 }
@@ -11,7 +10,7 @@
 :where([hidden]) {
   display: none;
 }
-:where(address, article, aside, audio, body, br, canvas, details, dialog, div, dl, embed, fieldset, figure, footer, form, header, hgroup, hr, html, iframe, img, input, li, main, menu, nav, object, ol, picture, section, ul, video) {
+:where(address, article, aside, audio, body, br, canvas, dialog, div, dl, embed, fieldset, figure, footer, form, header, hgroup, hr, html, iframe, img, input, li, main, menu, nav, object, ol, picture, section, ul, video) {
   display: flex;
 }
 a,
@@ -35,9 +34,7 @@ html {
 meter {
   appearance: revert;
 }
-ol,
-ul,
-menu {
+:where(ol, ul, menu) {
   list-style: none;
 }
 ::placeholder {
