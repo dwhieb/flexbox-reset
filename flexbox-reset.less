@@ -13,8 +13,9 @@
   display: none;
 }
 
-:where(address, article, aside, audio, body, br, canvas, dialog, div, dl, embed, fieldset, figure, footer, form, header, hgroup, hr, html, iframe, img, input, li, main, menu, nav, object, ol, picture, section, ul, video) {
+:where(address, article, aside, body, dialog, div, dl, fieldset, figure, footer, form, header, hgroup, html, iframe, label, legend, li, main, menu, nav, ol, section, ul) {
   display: flex;
+  flex-direction: column;
 }
 
 a,
@@ -25,6 +26,7 @@ button {
 // remove styling from quotes
 blockquote,
 q {
+
   quotes: none;
 
   &::before,
@@ -32,6 +34,7 @@ q {
     content: '';
     content: none;
   }
+
 }
 
 html {
