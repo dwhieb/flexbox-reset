@@ -29,6 +29,9 @@ q::after {
   content: '';
   content: none;
 }
+:focus-visible {
+  outline: revert;
+}
 html {
   text-size-adjust: none;
 }

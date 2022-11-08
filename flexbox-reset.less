@@ -1,5 +1,5 @@
 *:where(:not(iframe, canvas, details, img, summary, svg, svg *, symbol *, video)) {
-  all: unset;
+  all    : unset;
   display: revert;
 }
 
@@ -14,7 +14,7 @@
 }
 
 :where(address, article, aside, body, dialog, div, dl, fieldset, figure, footer, form, header, hgroup, html, iframe, label, legend, li, main, menu, nav, ol, section, ul) {
-  display: flex;
+  display       : flex;
   flex-direction: column;
 }
 
@@ -35,6 +35,10 @@ q {
     content: none;
   }
 
+}
+
+:focus-visible {
+  outline: revert;
 }
 
 html {
